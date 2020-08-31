@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="em" dir = "ltr">
+  <head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Sragvi Vadali's Photos</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".button").click(function(){
+                var name = $(this).attr("data-filter");
+                if(name === "all"){
+                    $(".filter").show("2000");
+                }
+                else{
+                    $(".filter").not("."+name).hide("2000");
+                    $(".filter").filter("."+name).show("2000");
+                }
+            });
+            $(".navigation a").click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+            
+        });
+    </script>
+    <link rel = "icon" href = "Images/logo.png">
+    <link rel="stylesheet" type = "text/css" href = "main.css">
+    <link rel="stylesheet" type = "text/css" href="lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class = "home-page" style="background: #000;">
+    <header>
+        <h1>Gallery</h1>
+    </header>
+
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class = "active" href="#">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class = "gallery">
+      <div style = "text-align: center;">
+        <div class="navigation">
+            <a href="#" data-filter="all" class = "button active">All</a>
+            <a href="#" data-filter="one" class = "button">People</a>
+            <a href="#" data-filter="two" class = "button">Landscape</a>
+            <a href="#" data-filter="three" class = "button">Flower</a>
+        </div>
+        <div class="ImageContainer" style = "margin-bottom:10vh ;">
+            <div class="filter one ">
+                <a href="Images/People/mom.jpg" data-lightbox="mygallery"><img src="Images/People/mom.jpg" alt=""></a>
+            </div>
+            <div class="filter one ">
+                <a href="Images/People/sragvi vadali - portaits -1.jpg" data-lightbox="mygallery" ><img src="Images/People/sragvi vadali - portaits -1.jpg" alt=""></a>
+            </div>
+            <div class="filter one">
+                <a href="Images/People/sragvi vadali - portaits -3.jpg" data-lightbox="mygallery" ><img src="Images/People/sragvi vadali - portaits -3.jpg" alt=""></a>
+            </div>
+            <div class="filter two">
+                <a href="Images/Landscape/IMG_4490.jpg" data-lightbox="mygallery"><img src="Images/Landscape/IMG_4490.jpg" alt=""></a>
+            </div>
+            <div class="filter two">
+                <a href="Images/Landscape/IMG_4560.jpg" data-lightbox="mygallery"><img src="Images/Landscape/IMG_4560.jpg" alt=""></a>
+            </div>
+            <div class="filter three">
+                <a href="Images/Flower/pink.jpg" data-lightbox="mygallery"> <img src="Images/Flower/pink.jpg" alt=""></a>
+            </div>
+            <div class="filter two">
+                <a href="Images/Landscape/sragvi_vadali_light-8.jpg" data-lightbox="mygallery"><img src="Images/Landscape/sragvi_vadali_light-8.jpg" alt=""></a>
+            </div>
+            <div class="filter three">
+                <a href="Images/Flower/purple.jpg" data-lightbox="mygallery">  <img src="Images/Flower/purple.jpg" alt=""></a>
+            </div>
+            <div class="filter three">
+                <a href="Images/Flower/sragvi vadali-10-1.jpg" data-lightbox="mygallery">  <img src="Images/Flower/sragvi vadali-10-1.jpg" alt=""></a>
+            </div>
+            <div class="filter three">
+                <a href="Images/Flower/sragvi vadali-6.jpg" data-lightbox="mygallery">  <img src="Images/Flower/sragvi vadali-6.jpg" alt=""></a>
+            </div>
+            <div class="filter two">
+                <a href="Images/Landscape/IMG_4260.jpg" data-lightbox="mygallery"><img src="Images/Landscape/IMG_4260.jpg" alt=""></a>
+            </div>
+            <div class="filter one">
+                <a href="Images/People/sragvi vadali - portaits -5.jpg" data-lightbox="mygallery"><img src="Images/People/sragvi vadali - portaits -5.jpg" alt=""></a>
+            </div>
+            <div class="filter">
+                <a href="Images/sragvi vadali-9-1.jpg" data-lightbox="mygallery"><img src="Images/sragvi vadali-9-1.jpg" alt=""></a>
+            </div>
+            <div class="filter">
+                <a href="Images/Landscape/sragvi vadali-8-1.jpg" data-lightbox="mygallery"><img src="Images/Landscape/sragvi vadali-8-1.jpg" alt=""></a>
+            </div>
+            <div class="filter two">
+                <a href="Images/Landscape/water_final-2.jpg" data-lightbox="mygallery"><img src="Images/Landscape/water_final-2.jpg" alt=""></a>
+            </div>
+            <div class="filter three">
+                <a href="Images/Flower/IMG_4834.jpg" data-lightbox="mygallery"><img src="Images/Flower/IMG_4834.jpg" alt=""></a>
+            </div>
+            <div class="filter">
+                <a href="Images/IMG_4825.jpg" data-lightbox="mygallery"><img src="Images/IMG_4825.jpg" alt=""></a>
+            </div>
+            <div class="filter three">
+                <a href="Images/Flower/IMG_4832.jpg" data-lightbox="mygallery"><img src="Images/Flower/IMG_4832.jpg" alt=""></a>
+            </div>
+            <div class="filter three">
+                <a href="Images/Flower/IMG_4816.jpg" data-lightbox="mygallery"><img src="Images/Flower/IMG_4816.jpg" alt=""></a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <nav class = "nav">
+        <a href="index.html" class = "nav_link ">
+            <span class="material-icons nav_icons">home</span>
+            <span class="nav_text">Home</span>
+        </a>
+        <a href="about.html" class="nav_link">
+            <span class="material-icons nav_icons">perm_identity</span>
+            <span class="nav_text">About</span>
+        </a>
+        <a href="#" class="nav_link">
+            <span class="material-icons nav_icons">collections</span>
+            <span class="nav_text">Gallery</span>
+        </a>
+        <a href="contact.html" class="nav_link nav_link_active">
+            <span class="material-icons nav_icons">contact_support</span>
+            <span class="nav_text">Contact</span>
+        </a>
+    </nav>
+    </div>
+   </section>
+  </body>
+</html>
