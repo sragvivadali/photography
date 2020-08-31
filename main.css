@@ -453,7 +453,7 @@ form-control.home-page{
   min-height: 100vh;
   background-size: cover;
   background-position: center;
-  padding-left: 10vh;
+  
 }
 
 .about-link{
@@ -537,12 +537,9 @@ form-control.home-page{
     .nav_bar{
         visibility: visible;
     }
-    .nav_bar{
-      visibility: visible;
-  }
     header{
-        visibility: hidden;
-        display: none;
+        font-size: 100px;
+        text-align: center;
     }
     #nav{
         visibility: hidden;
@@ -565,6 +562,23 @@ form-control.home-page{
       .field{
         font-size: 0.5rem;
       }
+    .container{
+      padding-bottom: 60px;
+    }
+
+    .about-img:before{
+      position: absolute;
+      content: '';
+      right: -10px;
+      top: 30px;
+      border: 0px solid #c55748d3;
+      width: 0;
+      height: 0;
+    
+    }
+    .about {
+      text-align: center;
+    }
       
       
       
@@ -609,6 +623,13 @@ form-control.home-page{
     .left{
         height: 1%;
       }
+      .nav{
+        visibility: visible;
+    }
+      header{
+        font-size: 100px;
+        text-align: center;
+    }
     
       .navigation a {
         padding: 3px 10px;
