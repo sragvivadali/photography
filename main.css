@@ -524,7 +524,7 @@ form-control.home-page{
 
 
 
-  @media (max-width: 1080px){
+  @media (max-width: 1500px){
     .home .home-content .block h1{
         font-size: 350%;
         overflow:hidden;
@@ -555,9 +555,7 @@ form-control.home-page{
     .contact-box {
         display: block;
     }
-    
-      
-      .field{
+    .field{
         font-size: 0.5rem;
       }
     .container{
@@ -577,10 +575,7 @@ form-control.home-page{
     .about {
       text-align: center;
     }
-      
-      
-      
-      .btn{
+     .btn{
         width: 60%;
         font-size: 0.5rem;
       }
@@ -610,7 +605,7 @@ form-control.home-page{
   }
 
 
-  @media (max-width: 500px){
+  @media (max-width: 812px){
     .home .home-content .block h1{
         font-size: 150%;
     }
